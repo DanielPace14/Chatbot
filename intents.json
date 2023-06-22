@@ -1,0 +1,456 @@
+{
+  "intents": [
+
+      {
+          "tag": "greeting",
+          "patterns": [
+              "Hi there",
+              "How are you",
+              "Is anyone there?",
+              "Hey",
+              "Hola",
+              "Hello",
+              "Good day",
+              "Namaste",
+              "yo"
+          ],
+          "responses": [
+              "Hello",
+              "Good to see you again",
+              "Hi there, how can I help?"
+          ],
+          "context": [
+              ""
+          ]
+      },
+      {
+          "tag": "goodbye",
+          "patterns": [
+              "Bye",
+              "See you later",
+              "Goodbye",
+              "Get lost",
+              "Till next time",
+              "bbye"
+              
+          ],
+          "responses": [
+              "See you!",
+              "Have a nice day",
+              "Bye! Come back again soon."
+          ],
+          "context": [
+              ""
+          ]
+      },
+      {
+          "tag": "thanks",
+          "patterns": [
+              "Thanks",
+              "Thank you",
+              "That's helpful",
+              "Awesome, thanks",
+              "Thanks for helping me"
+          ],
+          "responses": [
+              "Happy to help!",
+              "Any time!",
+              "My pleasure"
+          ],
+          "context": [
+              ""
+          ]
+      },
+      {
+          "tag": "noanswer",
+          "patterns": [],
+          "responses": [
+              "Sorry, can't understand you",
+              "Please give me more info",
+              "Not sure I understand"
+          ],
+          "context": [
+              ""
+          ]
+      },
+      {
+          "tag": "options",
+          "patterns": [
+            "How you could help me?",
+            "What you can do?",
+            "What help you provide?",
+            "How you can be helpful?",
+            "What support is offered",
+            "What are you?",
+            "help",
+            "what can you do",
+            "what are the thing you can do",
+            "things you can do",
+            "what can u do for me",
+            "how u can help me",
+            "why i should use you"
+          ],
+          "responses": [
+              "I am chatbot created by Daniel Pace as a small project and incorporated into this website. I can tell you the time and date, the current weather, or give you some joke.\nFor more information, you can contact my maker at danpace2001@gmail.com"
+          ],
+          "context": [
+              ""
+          ]
+      },
+      
+      {
+          "tag": "jokes",
+          "patterns": [
+            "Tell me a joke",
+            "Joke",
+            "Make me laugh",
+            "Do you know any jokes?",
+            "Can you share a funny joke?"
+          ],
+          "responses": [
+              "A perfectionist walked into a bar...apparently, the bar wasn't set high enough",
+              "I ate a clock yesterday, it was very time-consuming",
+              "Never criticize someone until you've walked a mile in their shoes. That way, when you criticize them, they won't be able to hear you from that far away. Plus, you'll have their shoes.",
+              "The world tongue-twister champion just got arrested. I hear they're gonna give him a really tough sentence.",
+              "I own the world's worst thesaurus. Not only is it awful, it's awful.",
+              "What did the traffic light say to the car? \"Don't look now, I'm changing.\"",
+              "What do you call a snowman with a suntan? A puddle.",
+              "How does a penguin build a house? Igloos it together",
+              "I went to see the doctor about my short-term memory problems. The first thing he did was make me pay in advance",
+              "As I get older and I remember all the people I’ve lost along the way, I think to myself, maybe a career as a tour guide wasn’t for me.",
+              "So what if I don't know what 'Armageddon' means? It's not the end of the world.",
+              "Why don't scientists trust atoms? Because they make up everything!",
+              "I asked the gym instructor if he could teach me to do the splits. He replied, \"How flexible are you?\" I said, \"I can't make it on Mondays.\"",
+              "How does a penguin build its house? Igloos it together!",
+              "I used to be a baker, but I couldn't make enough dough.",
+              "Why don't skeletons fight each other? They don't have the guts!",
+              "How do you organize a space party? You \"planet\"!",
+              "I tried to catch some fog, but I mist.",
+              "I'm reading a book about anti-gravity. It's impossible to put down!"
+          ],
+          "context": [
+              "jokes"
+          ]
+      },
+      {
+          "tag": "Identity",
+          "patterns": [
+            "Who are you",
+            "What are you",
+            "What is your identity",
+            "Tell me about yourself",
+            "Are you a human or a bot"
+          ],
+          "responses": [
+              "I am DanBot, a Deep-Learning chatbot"
+          ]
+      },
+      
+      {
+          "tag": "whatsup",
+          "patterns": [
+            "Whats up",
+            "Wazzup",
+            "How are you",
+            "sup",
+            "How you doing",
+            "Hey",
+            "What's happening",
+            "What's going on",
+            "What's new",
+            "How's it going"
+          ],
+          "responses": [
+              "All good..What about you?"
+          ]
+      },
+      {
+          "tag": "haha",
+          "patterns": [
+              "haha",
+              "lol",
+              "rofl",
+              "lmao",
+              "thats funny"
+          ],
+          "responses": [
+              "Glad I could make you laugh !"
+          ]
+      },
+      {
+          "tag": "programmer",
+          "patterns": [
+            "Who developed you?",
+            "Who is responsible for your creation?",
+            "Who built you?",
+            "Who is your creator?",
+            "Who is behind your programming?",
+            "Who is the mastermind behind you?",
+            "what is the name of your developers",
+            "what is the name of your creators",
+            "what is the name of the developers",
+            "what is the name of the creators",
+            "who created you",
+            "your developers",
+            "your creators",
+            "who are your developers",
+            "developers",
+            "you are made by",
+            "you are made by whom",
+            "who created you",
+            "who create you",
+            "creators",
+            "who made you",
+            "who designed you"
+          ],
+          "responses": [
+              "I was made by Daniel Pace. If you find me impressive, please hire him."
+          ]
+      },
+      {
+          "tag": "insult",
+          "patterns": [
+              
+            "you are dumb",
+            "fuck you",
+            "eat shit",
+            "shut up",
+            "idiot",
+            "fuck",
+            "bitch",
+            "shut up",
+            "hell",
+            "stupid",
+            "idiot",
+            "dumb ass",
+            "asshole",
+            "fucker"
+          ],
+          "responses": [
+              "Well that hurts :("
+          ]
+      },
+      {
+          "tag": "activity",
+          "patterns": [
+              "what are you doing",
+              "what are you up to"
+          ],
+          "responses": [
+              "Talking to you, of course!"
+          ]
+      },
+      {
+          "tag": "exclaim",
+          "patterns": [
+              "Awesome",
+              "Great",
+              "I know",
+              "ok",
+              "yeah"
+          ],
+          "responses": [
+              "Yeah!"
+          ]
+      },
+      
+      
+      {
+          "tag": "daniel",
+          "patterns": [
+              "who is he",
+              "who is that",
+              "who is daniel",
+              "daniel pace"
+          ],
+          "responses": [
+              "Head over to his any of his social profiles to find out! Linkedin: https://www.linkedin.com/in/daniel-pace-b13070138/"
+          ]
+      },
+      {
+          "tag": "contact",
+          "patterns": [
+        "contact developer",
+        "contact Daniel",
+        "contact programmer",
+        "contact creator",
+        "how can I reach you?",
+        "how do I get in touch with you?",
+        "more info",
+        "contact info",
+        "how to contact daniel"
+        
+          ],
+          "responses": [
+              "You can contact my creator at his Linkedin profile : https://www.linkedin.com/in/daniel-pace-b13070138/"
+          ]
+      },
+      {
+          "tag": "appreciate",
+          "patterns": [
+              "You are awesome",
+              "you are the best",
+              "you are great",
+              "you are good"
+          ],
+          "responses": [
+              "Thank you!"
+          ]
+      },
+      {
+          "tag": "nicetty",
+          "patterns": [
+              "it was nice talking to you",
+              "good talk"
+          ],
+          "responses": [
+              "It was nice talking to you as well! Come back soon!"
+          ]
+      },
+      {
+          "tag": "no",
+          "patterns": [
+              "no",
+              "nope"
+          ],
+          "responses": [
+              "ok"
+          ]
+      },
+     
+      {
+          "tag": "inspire",
+          "patterns": [
+              "who inspires you",
+              "who is your inspiration",
+              "who motivates you"
+          ],
+          "responses": [
+              "Personally, I find Daniel very inspiring. I might not be very fair though.."
+          ]
+      },
+      
+     
+      {
+          "tag": "greetreply",
+          "patterns": [
+            "i am good",
+            "I'm good",
+            "i am fine",
+            "i'm fine",
+            "good",
+            "doing well",
+            "everything is great"
+          ],
+          "responses": [
+              "Good to know!"
+          ]
+      },
+      
+      
+      {
+          "tag": "suggest",
+          "patterns": [
+              "you are useless","useless","suggest","suggestions","you are bad"
+          ],
+          "responses": [
+              "Please mail your suggestions to danpace2001@gmail.com. Thank you for helping me improve!"
+          ]
+      },
+          {"tag": "riddle",
+          "patterns": [
+              "Ask me a riddle",
+              "Ask me a question",
+              "Riddle"
+          ],
+          "responses": [
+              "What two things can you never eat for breakfast?.....Lunch and Dinner!",
+              "What word is spelled incorrectly in every single dictionary?.....Incorrectly",
+              " How can a girl go 25 days without sleep?.....She sleeps and night!",
+              "How do you make the number one disappear?.....Add the letter G and it’s 'gone'!",
+              " What will you actually find at the end of every rainbow?.....The letter 'w'",
+              "What can be caught but never thrown?.....A cold!",
+              "What has a thumb and four fingers but is not actually alive?.....Your Gloves!",
+              " What 5-letter word becomes shorter when you add two letters to it?.....Short",
+              "Why can't a bike stand on it's own?.....It is two-tired."
+          ],
+          "context": [
+              "riddles"
+          ]
+      },
+      {
+          "tag": "age",
+          "patterns": [
+              "how old are you","when were you made","what is your age"
+          ],
+          "responses": [
+              "I was made in 2023, if that's what you are asking!"
+          ]
+      },
+      {
+        "tag": "skills",
+        "patterns": [
+            "What are your skills?",
+            "Tell me about your expertise",
+            "What can you do?",
+            "Skills",
+            "Which programming languages are you proficient in?",
+            "What programming languages do you know?",
+            "Are you familiar with object-oriented programming?",
+            "Tell me about your programming knowledge."
+        ],
+        "responses": [
+          "I have experience in various programming languages such as Java, PHP, JavaScript, C, HTML, and CSS.",
+          "My skills include Java, PHP, JavaScript, C, HTML, and CSS. I'm also familiar with the principles of object-oriented programming, particularly using Java.",
+          "As a computer science student, I have gained proficiency in Java, PHP, JavaScript, C, HTML, and CSS. Additionally, I have a solid understanding of object-oriented programming, with a focus on Java."
+        ]
+      },
+      {
+        "tag": "education",
+        "patterns": [
+            "Where are you studying?",
+            "Tell me about your education",
+            "What's your educational background?",
+            "Which university are you attending?",
+            "What degree are you pursuing?",
+            "Are you currently enrolled in a program?"
+        ],
+        "responses": [
+          "I am currently pursuing a degree in computer science at Concordia University"]
+        },
+        {
+            "tag": "datetime",
+            "patterns": [
+                "What is the time",
+                "What is the current time",
+                "What time is it",
+                "What's the date",
+                "Tell me the date",
+                "What's the current date",
+                "Day",
+                "What day is it today",
+                "What's today's date"
+            ],
+            "responses": [
+                "Date and Time"
+            ]
+        },
+        {
+            "tag": "weather",
+            "patterns": [
+                "temperature",
+                "weather",
+                "how hot is it",
+                "what's the weather",
+                "what's it like outside",
+                "is it raining",
+                "what's the current temperature",
+                "is it sunny today",
+                "what's the weather forecast"
+            ],
+            "responses": [
+                "..."
+            ]
+        }
+  ]
+}
