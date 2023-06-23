@@ -1,19 +1,42 @@
-from flask import Flask, render_template, request, jsonify
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 
-from nlp import chatbot_response
+<head>
+    <meta charset="UTF-8">
+    <title>Chatbot</title>
+</head>
+<body>
+<div class="container">
+    <div class="chatbox">
+        <div class="chatbox__support">
+            <div class="chatbox__header">
+                <div class="chatbox__image--header">
+                    <img src="https://img.icons8.com/futurama-bender" alt="image">
+                </div>
+                <div class="chatbox__content--header">
+                    <h4 class="chatbox__heading--header">Chat support</h4>
+                    <p class="chatbox__description--header">Hi. My name is DanBot. How can I help you?</p>
+                </div>
+            </div>
+            <div class="chatbox__messages">
+                <div></div>
+            </div>
+            <div class="chatbox__footer">
+                <input type="text" placeholder="Write a message...">
+                <button class="chatbox__send--footer send__button">Send</button>
+            </div>
+        </div>
+        <div class="chatbox__button">
+            <button><img src="{{ url_for('static', filename='images/chatbox-icon.svg') }}" /></button>
+        </div>
+    </div>
+</div>
 
-app = Flask(__name__)
+    <script type = text/javascript>
+        $SCRIPT_ROOT = {{ request.script_root|tojson|safe}};
+    </script>
+    <script type="text/javascript" src="{{ url_for('static', filename='app.js') }}"></script>
 
-@app.get("/")
-def index_get():
-    return render_template("base.html")
-
-@app.post("/predict")
-def predict():
-    text = request.get_json().get("message")
-    
-    response = chatbot_response(text)
-    message = {"answer": response}
-    return jsonify(message)
-if __name__ == "__main__":
-    app.run(debug=True)
+</body>
+</html>
